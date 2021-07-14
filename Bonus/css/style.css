@@ -3,6 +3,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: red;
 }
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    animation-name: "vanish";
+    animation-duration: 8s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
 .dropbtn {
     background-color: blueviolet;
     color: crimson;
@@ -30,3 +39,10 @@ body {
   .dropdown:active .dropdown-content {
       display: block;
   }
+  @keyframes vanish {
+    15% {background-color: purple;}
+    35% {background-color: springgreen;}
+    65% {background-color: transparent;}
+    100% {background-color: blue;}
+    
+}
